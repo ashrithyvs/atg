@@ -7,22 +7,25 @@ import groupIcon4 from "./gi4.png";
 
 function Groups() {
   const GroupList = [
-    { name: "Leisure", src: groupIcon1 },
-    { name: "Activism", src: groupIcon2 },
-    { name: "MBA", src: groupIcon3 },
-    { name: "Philosophy", src: groupIcon4 },
+    { id: 1, name: "Leisure", src: groupIcon1 },
+    { id: 2, name: "Activism", src: groupIcon2 },
+    { id: 3, name: "MBA", src: groupIcon3 },
+    { id: 4, name: "Philosophy", src: groupIcon4 },
   ];
   return (
     <div className="text-center" style={{ margin: "5rem 0" }}>
       <div>
-        <i class="far fa-thumbs-up mx-2"></i>
+        <i className="far fa-thumbs-up mx-2"></i>
         <span>Recomended Groups</span>
       </div>
-      <div className="mx-4">
-        {GroupList.map((group) => {
-          return <Group name={group.name} imgSrc={group.src} />;
-        })}
-      </div>
+      {GroupList.map((group) => {
+        return (
+          <div key={group.id} className="mx-4">
+            <Group name={group.name} imgSrc={group.src} />;
+          </div>
+        );
+      })}
+
       <a href="#seemore">
         <small>See More...</small>
       </a>

@@ -12,16 +12,16 @@ function ArticleList() {
   const userName = "Sarah West";
   const viewCount = 1400;
   const articleType = [
-    { pic: "✍️ Article" },
-    { pic: "🔬️ Education" },
-    { pic: "🗓️ Meetup" },
-    { pic: "💼️ Job" },
+    { id: 1, pic: "✍️ Article" },
+    { id: 2, pic: "🔬️ Education" },
+    { id: 3, pic: "🗓️ Meetup" },
+    { id: 4, pic: "💼️ Job" },
   ];
   return (
     <Container>
       {articleType.map((artType) => {
         return (
-          <CardColumns>
+          <CardColumns key={artType.id}>
             <Article
               imgUrl={CardImg}
               title={cardTitle}

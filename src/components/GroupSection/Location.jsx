@@ -3,8 +3,6 @@ import { Form, Container, Button, Dropdown } from "react-bootstrap";
 
 function Location() {
   const [location, setLocation] = useState("");
-  const locationIcon = <i class="fas fa-map-marker-alt"></i>;
-  console.log(locationIcon);
   return (
     <Container className="d-flex flex-column align-items-center">
       <div>
@@ -22,12 +20,12 @@ function Location() {
             borderTop: 0,
             borderRight: 0,
             borderLeft: 0,
-            fontFamily: "fontAwesome,roboto",
+            fontFamily: "FontAwesome,IBM Plex Sans,sans-serif",
           }}
         />
       </Form>
       <div className="d-flex w-75">
-        <i class="fas fa-info-circle my-auto mx-2"></i>
+        <i className="fas fa-info-circle my-auto mx-2"></i>
         <span className="text-muted" style={{ fontSize: "0.7rem" }}>
           Your location will help us serve better and extend a personalised
           experience.
