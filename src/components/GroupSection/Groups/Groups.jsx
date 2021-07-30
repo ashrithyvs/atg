@@ -21,7 +21,7 @@ function Groups() {
       {GroupList.map((group) => {
         return (
           <div key={group.id} className="mx-4">
-            <Group name={group.name} imgSrc={group.src} />;
+            <Group name={group.name} imgSrc={group.src} />
           </div>
         );
       })}

@@ -12,6 +12,7 @@ function Register({ showReg }) {
       onHide={() => setShow(false)}
       dialogClassName="modal-90w"
       size="lg"
+      centered
     >
       <Modal.Header className="p-0">
         <Alert variant="success m-0 py-3 text-center w-100">
