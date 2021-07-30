@@ -10,8 +10,12 @@ function Group({ name, imgSrc }) {
       </div>
       <Button
         size="sm"
-        variant="light"
-        style={{ borderRadius: "1rem", width: "5rem", height: "2rem" }}
+        variant="outline-dark"
+        style={{
+          borderRadius: "1rem",
+          width: "5rem",
+          height: "2rem",
+        }}
       >
         Follow
       </Button>

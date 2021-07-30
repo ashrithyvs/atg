@@ -6,7 +6,7 @@ function Location() {
   return (
     <Container className="d-flex flex-column align-items-center">
       <div>
-        <Dropdown.Toggle variant="light mx-2">Write a post</Dropdown.Toggle>
+        <Dropdown.Toggle variant="outline-dark">Write a post</Dropdown.Toggle>
         <Button className="mx-2">Join a Group</Button>
       </div>
       <Form className="my-4 w-75">

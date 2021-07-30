@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button, Form, Modal, Alert, Container } from "react-bootstrap";
 import google from "./google.svg";
 import Img from "./img.png";
-function Register({ showReg }) {
+function Auth({ showReg }) {
   const [show, setShow] = useState(showReg);
   const [change, setChange] = useState(false);
 
@@ -128,4 +128,4 @@ function SignInContainer() {
   );
 }
 
-export default Register;
+export default Auth;

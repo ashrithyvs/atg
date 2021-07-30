@@ -20,7 +20,7 @@ function Article({
             <Card.Title>{title}</Card.Title>
             <DropdownButton
               align="end"
-              variant="light"
+              variant="outline-dark"
               title={<i className="fas fa-ellipsis-h"></i>}
               className="p-0"
             >
