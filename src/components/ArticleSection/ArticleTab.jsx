@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Tabs, Tab, Container } from "react-bootstrap";
 import GroupSection from "../GroupSection/GroupSection";
 import ArticleList from "./ArticleList/ArticleList";
-
+import "./ArticleTab.css";
 function ArticleTab() {
   const [key, setKey] = useState("AllPosts");
   const lorem =
@@ -15,20 +15,24 @@ function ArticleTab() {
         onSelect={(k) => setKey(k)}
         className="mb-3 d-flex"
       >
-        <Tab className="d-flex " eventKey="AllPosts" title="All Posts">
+        <Tab className="d-flex tab-head" eventKey="AllPosts" title="All Posts">
           <ArticleList />
-          <GroupSection />
+          <GroupSection className="group-section" />
         </Tab>
-        <Tab eventKey="Article" title="Article">
+        <Tab
+          className="redundant-tab d-none"
+          eventKey="Article"
+          title="Article"
+        >
           <p>{lorem}</p>
         </Tab>
-        <Tab eventKey="Event" title="Event">
+        <Tab className="redundant-tab" eventKey="Event" title="Event">
           <p>{lorem}</p>
         </Tab>
-        <Tab eventKey="Education" title="Education">
+        <Tab className="redundant-tab" eventKey="Education" title="Education">
           <p>{lorem}</p>
         </Tab>
-        <Tab eventKey="Job" title="Job">
+        <Tab className="redundant-tab" eventKey="Job" title="Job">
           <p>{lorem}</p>
         </Tab>
       </Tabs>

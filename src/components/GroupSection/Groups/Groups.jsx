@@ -12,6 +12,8 @@ function Groups() {
     { id: 3, name: "MBA", src: groupIcon3 },
     { id: 4, name: "Philosophy", src: groupIcon4 },
   ];
+
+ 
   return (
     <div className="text-center" style={{ margin: "5rem 0" }}>
       <div>

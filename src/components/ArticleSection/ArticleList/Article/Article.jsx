@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, DropdownButton, Dropdown } from "react-bootstrap";
-
+import "./Article.css";
 function Article({
   imgUrl,
   title,
@@ -20,9 +20,8 @@ function Article({
             <Card.Title>{title}</Card.Title>
             <DropdownButton
               align="end"
-              variant="outline-dark"
+              variant="light"
               title={<i className="fas fa-ellipsis-h"></i>}
-              className="p-0"
             >
               <Dropdown.Item eventKey="1">Edit</Dropdown.Item>
               <Dropdown.Item eventKey="2">Report</Dropdown.Item>
@@ -30,12 +29,21 @@ function Article({
             </DropdownButton>
           </div>
           <Card.Text className="text-muted">{desc}</Card.Text>
-          <div className="d-flex py-2">
-            <img src={userImg} alt="User" />
-            <span className="mx-2 my-auto">{userName}</span>
-            <div className="d-flex mx-auto my-auto">
-              <i className="far fa-eye my-auto"></i>
-              <small className="mx-2 ">{viewCount} views</small>
+          <div className=" d-flex justify-content-around py-2">
+            <div className="d-flex user-details justify-content-between w-100">
+              <div className="cont">
+                <img className="userImg" src={userImg} alt="User" />
+                <div className="details">
+                  <span className="mx-2 my-auto">{userName}</span>
+                  <small className="mx-auto d-none view-count-mobile">
+                    {viewCount} views
+                  </small>
+                </div>
+                <div className="d-flex view-count mx-auto my-auto">
+                  <i className="far fa-eye icon my-auto"></i>
+                  <small className="mx-auto">{viewCount} views</small>
+                </div>
+              </div>
             </div>
             <i
               className="fas fa-share-alt my-auto mx-4"

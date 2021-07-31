@@ -1,13 +1,14 @@
 import React from "react";
 import Groups from "./Groups/Groups";
 import Location from "./Location";
+import "./GroupSection.css";
 
 function GroupSection() {
   return (
-    <div>
+    <section className="group-section">
       <Location />
       <Groups />
-    </div>
+    </section>
   );
 }
 

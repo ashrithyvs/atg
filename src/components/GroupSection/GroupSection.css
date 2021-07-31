@@ -1,0 +1,5 @@
+@media only screen and (max-width: 1224px) {
+  section {
+    display: none;
+  }
+}

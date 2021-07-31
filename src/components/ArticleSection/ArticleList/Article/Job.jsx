@@ -25,7 +25,7 @@ function Job({
             <Card.Title>{title}</Card.Title>
             <DropdownButton
               align="end"
-              variant="outline-dark"
+              variant="light"
               title={<i className="fas fa-ellipsis-h"></i>}
               className="p-0"
             >

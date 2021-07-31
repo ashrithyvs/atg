@@ -1,0 +1,15 @@
+@media only screen and (max-width: 990px) {
+  .alert {
+    display: none;
+  }
+  .joy {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .modal {
+    transform: translate(0px, 110px);
+  }
+}
