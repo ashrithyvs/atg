@@ -17,7 +17,7 @@ function Article({
         <span className="mx-3 mt-3">{articleType}</span>
         <Card.Body>
           <div className="d-flex justify-content-between">
-            <Card.Title>{title}</Card.Title>
+            <Card.Title className="title">{title}</Card.Title>
             <DropdownButton
               align="end"
               variant="light"
@@ -29,19 +29,14 @@ function Article({
             </DropdownButton>
           </div>
           <Card.Text className="text-muted">{desc}</Card.Text>
-          <div className=" d-flex justify-content-around py-2">
-            <div className="d-flex user-details justify-content-between w-100">
-              <div className="cont">
-                <img className="userImg" src={userImg} alt="User" />
-                <div className="details">
-                  <span className="mx-2 my-auto">{userName}</span>
-                  <small className="mx-auto d-none view-count-mobile">
-                    {viewCount} views
-                  </small>
-                </div>
-                <div className="d-flex view-count mx-auto my-auto">
+          <div className=" d-flex py-2">
+            <div className="d-flex w-100">
+              <img className="userImg" src={userImg} alt="User" />
+              <div className="d-flex user-content justify-content-between">
+                <span className="mx-2 my-auto">{userName}</span>
+                <div className="d-flex view-count-wrapper my-auto">
                   <i className="far fa-eye icon my-auto"></i>
-                  <small className="mx-auto">{viewCount} views</small>
+                  <small className="mx-1">{viewCount} views</small>
                 </div>
               </div>
             </div>

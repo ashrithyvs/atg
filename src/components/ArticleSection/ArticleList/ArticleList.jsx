@@ -14,7 +14,7 @@ function ArticleList() {
     "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…";
   const userName = "Sarah West";
   const viewCount = 1400;
-  const companyName = "Innovaccer Analytics Private Ltd.";
+  const companyName = "Innovaccer Analytics Ltd.";
   const location = "Noida, India";
   const jobTitle = "Software Developer";
   const meetTime = "Fri, 12 Oct, 2018";

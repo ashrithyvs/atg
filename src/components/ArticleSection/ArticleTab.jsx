@@ -19,11 +19,7 @@ function ArticleTab() {
           <ArticleList />
           <GroupSection className="group-section" />
         </Tab>
-        <Tab
-          className="redundant-tab d-none"
-          eventKey="Article"
-          title="Article"
-        >
+        <Tab className="redundant-tab" eventKey="Article" title="Article">
           <p>{lorem}</p>
         </Tab>
         <Tab className="redundant-tab" eventKey="Event" title="Event">

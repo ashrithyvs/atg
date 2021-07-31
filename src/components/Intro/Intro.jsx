@@ -17,10 +17,10 @@ function Intro() {
       className="intro-section d-flex flex-column justify-content-end"
       style={background}
     >
-      <div className="button-wrap">
+      <div className="button-wrap align-self-end ">
         <Button
-          className="align-self-end mb-5 mx-4 login-btn"
-          style={{ width: "5rem" }}
+          className="mb-5 mx-4 login-btn"
+          style={{ width: "5rem", display: "none" }}
           variant="outline-light"
         >
           Login

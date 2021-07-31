@@ -10,9 +10,22 @@
     margin-left: 5rem;
   }
 }
+
+@media only screen and (min-width: 350.98px) and (max-width: 450.98px) {
+  .info-wrapper {
+    flex-direction: column !important;
+  }
+  .location-wrapper {
+    display: block;
+  }
+  .name {
+    font-size: 5%;
+  }
+}
+
 @media only screen and (max-width: 1224px) {
   .card {
-    width: 100%;
+    width: 79vw;
   }
   .userImg {
     width: 60px;
