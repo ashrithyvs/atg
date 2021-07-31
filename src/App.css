@@ -1,5 +1,4 @@
 .write-btn {
-  visibility: hidden;
   position: fixed;
   right: 5%;
   bottom: 5%;
@@ -10,6 +9,5 @@
 @media only screen and (min-width: 350.98px) and (max-width: 450.98px) {
   .write-btn {
     color: blue;
-    visibility: visible;
   }
 }
