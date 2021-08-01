@@ -1,6 +1,9 @@
 .navigation-brand {
   padding: 1rem 4rem;
 }
+.register-btn {
+  display: none;
+}
 
 @media only screen and (max-width: 990px) {
   .search-bar {
@@ -8,5 +11,11 @@
   }
   .navigation-brand {
     padding: 0.5rem 1rem;
+  }
+  .text {
+    display: none;
+  }
+  .register-btn {
+    display: initial !important;
   }
 }

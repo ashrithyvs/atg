@@ -1,5 +1,10 @@
-@media only screen and (min-width: 990px) {
-  .login-button {
-    display: unset;
+.join-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .join-btn {
+    display: initial !important;
+    margin: 3rem 1rem;
   }
 }

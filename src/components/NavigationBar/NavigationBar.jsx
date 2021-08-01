@@ -1,4 +1,4 @@
-import { Navbar, Form, FormControl } from "react-bootstrap";
+import { Navbar, Form, FormControl, Button } from "react-bootstrap";
 import { useState } from "react";
 import logo from "./whole.png";
 import Auth from "../Auth/Auth";
@@ -32,15 +32,22 @@ function NavigationBar() {
               }}
             />
           </Form>
-          <Navbar.Text className="mx-5">
-            Create account.{" "}
+          <Navbar.Text className="mx-5 text">
+            Create account.
             <a href="#register" onClick={() => setShowLogin(true)}>
               It’s free!
             </a>
           </Navbar.Text>
+          <Button
+            variant="light"
+            onClick={() => setShowLogin(true)}
+            className="register-btn my-3 mx-4"
+          >
+            Register
+          </Button>
         </Navbar.Collapse>
       </Navbar>
-      {showLogin ? <Auth showReg /> : null}
+      {showLogin ? <Auth showAuth={showLogin} /> : null}
     </>
   );
 }

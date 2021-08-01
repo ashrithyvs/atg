@@ -17,15 +17,9 @@ function Intro() {
       className="intro-section d-flex flex-column justify-content-end"
       style={background}
     >
-      <div className="button-wrap align-self-end ">
-        <Button
-          className="mb-5 mx-4 login-btn"
-          style={{ width: "5rem", display: "none" }}
-          variant="outline-light"
-        >
-          Login
-        </Button>
-      </div>
+      <Button className=" join-btn align-self-end" variant="outline-light">
+        Join Group
+      </Button>
       <Container className="text-white p-5">
         <h3>Computer Engineering</h3>
         <span>142,765 Computer Engineers follow this</span>

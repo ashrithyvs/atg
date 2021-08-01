@@ -49,7 +49,7 @@ function Job({
               )}
               <>
                 <i
-                  class="fas fa-map-marker-alt"
+                  class="fas fa-map-marker-alt my-auto"
                   style={{ marginLeft: "1rem", marginRight: "0.5rem" }}
                 ></i>
                 <span className="name">{location}</span>

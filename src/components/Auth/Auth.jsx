@@ -3,8 +3,8 @@ import { Button, Form, Modal, Alert, Container } from "react-bootstrap";
 import google from "./google.svg";
 import Img from "./img.png";
 import "./Auth.css";
-function Auth({ showReg }) {
-  const [show, setShow] = useState(showReg);
+function Auth({ showAuth }) {
+  const [show, setShow] = useState(showAuth);
   const [change, setChange] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ function Auth({ showReg }) {
     >
       <Modal.Header className="p-0">
         <Alert variant="success m-0 py-3 alert text-center w-100">
-          <small style={{ fontSize: "0.80rem" }}>
+          <small style={{ fontSize: "0.8rem" }}>
             Let's learn, share & inspire each other with our passion for
             computer engineering. Sign up now 🤘🏼
           </small>
