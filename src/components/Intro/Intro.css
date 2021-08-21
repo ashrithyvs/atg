@@ -1,10 +1,11 @@
-.join-btn {
+.intro-btn {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .join-btn {
-    display: initial !important;
+  .intro-btn {
+    display: flex !important;
+    justify-content: space-between;
     margin: 3rem 1rem;
   }
 }
