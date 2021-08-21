@@ -2,15 +2,22 @@ import { useState } from "react";
 import { Button, Form, Modal, Alert, Container } from "react-bootstrap";
 import google from "./google.svg";
 import Img from "./img.png";
+import { useHistory } from "react-router-dom";
 import "./Auth.css";
-function Auth({ showAuth }) {
-  const [show, setShow] = useState(showAuth);
+function Auth() {
+  const [show, setShow] = useState(true);
   const [change, setChange] = useState(false);
+  const history = useHistory();
+
+  const hideHandler = () => {
+    setShow(false);
+    history.push("/");
+  };
 
   return (
     <Modal
       show={show}
-      onHide={() => setShow(false)}
+      onHide={hideHandler}
       dialogClassName="modal-90w"
       size="lg"
       centered
@@ -40,7 +47,7 @@ function Auth({ showAuth }) {
             <>
               <h3>Create Account</h3>
               <small className="text-muted my-auto">
-                Already have an account?{" "}
+                Already have an account?
                 <a href="#signin" onClick={(e) => setChange(true)}>
                   Sign In
                 </a>
@@ -76,7 +83,7 @@ function RegisterContainer() {
 
           <div className="my-2">
             <Button className="my-1 w-100" variant="light">
-              <i style={{ color: "blue" }} class="fab fa-facebook mx-2"></i>
+              <i style={{ color: "blue" }} className="fab fa-facebook mx-2"></i>
               <small>Sign up with Facebook</small>
             </Button>
             <Button className="my-1 w-100" variant="light">
@@ -114,7 +121,10 @@ function SignInContainer() {
 
             <div className="my-2">
               <Button className="my-1 w-100" variant="light">
-                <i style={{ color: "blue" }} class="fab fa-facebook mx-2"></i>
+                <i
+                  style={{ color: "blue" }}
+                  className="fab fa-facebook mx-2"
+                ></i>
                 <small>Sign up with Facebook</small>
               </Button>
               <Button className="my-1 w-100" variant="light">

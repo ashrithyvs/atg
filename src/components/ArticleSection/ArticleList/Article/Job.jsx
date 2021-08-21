@@ -38,18 +38,18 @@ function Job({
             <div className="mt-2 mb-3 d-flex info-wrapper">
               {articleType === "💼️ Job" ? (
                 <>
-                  <i class="fas fa-suitcase mx-2 my-auto"></i>
+                  <i className="fas fa-suitcase mx-2 my-auto"></i>
                   <span className="name">{companyName}</span>
                 </>
               ) : (
                 <>
-                  <i class="fas fa-calendar-week mx-2 my-auto"></i>
+                  <i className="fas fa-calendar-week mx-2 my-auto"></i>
                   <span className="name">{meetTime}</span>
                 </>
               )}
               <>
                 <i
-                  class="fas fa-map-marker-alt my-auto"
+                  className="fas fa-map-marker-alt my-auto"
                   style={{ marginLeft: "1rem", marginRight: "0.5rem" }}
                 ></i>
                 <span className="name">{location}</span>

@@ -23,7 +23,7 @@ function Intro() {
           style={{ border: "0px" }}
           variant="outline-light"
         >
-          <i class="fas fa-arrow-left"></i>
+          <i className="fas fa-arrow-left"></i>
         </Button>
         <Button className="align-self-end" variant="outline-light">
           Join Group

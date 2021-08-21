@@ -1,12 +1,12 @@
 import { Navbar, Form, FormControl, Button } from "react-bootstrap";
-import { useState } from "react";
 import logo from "./whole.png";
 import Auth from "../Auth/Auth";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
 import "./NavigationBar.css";
 function NavigationBar() {
-  const [showLogin, setShowLogin] = useState(false);
   return (
-    <>
+    <Router>
       <Navbar bg="light" fixed="top" expand="lg">
         <Navbar.Brand href="#">
           <img
@@ -34,21 +34,22 @@ function NavigationBar() {
           </Form>
           <Navbar.Text className="mx-5 text">
             Create account.
-            <a href="#register" onClick={() => setShowLogin(true)}>
-              It’s free!
-            </a>
+            <Link to="/register">It’s free!</Link>
           </Navbar.Text>
-          <Button
-            variant="light"
-            onClick={() => setShowLogin(true)}
-            className="register-btn my-3 mx-4"
-          >
-            Register
-          </Button>
+          <Link to="/register">
+            <Button variant="light" className="register-btn my-3 mx-4">
+              Register
+            </Button>
+          </Link>
         </Navbar.Collapse>
       </Navbar>
-      {showLogin ? <Auth showAuth={showLogin} /> : null}
-    </>
+
+      <Switch>
+        <Route exact path="/register">
+          <Auth />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

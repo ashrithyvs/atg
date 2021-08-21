@@ -10,7 +10,7 @@ function App() {
       <Intro />
       <ArticleTab />
       <Button className="write-btn" variant="danger">
-        <i class="fas fa-pen"></i>
+        <i className="fas fa-pen"></i>
       </Button>
     </div>
   );
