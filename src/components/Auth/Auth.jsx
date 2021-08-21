@@ -92,7 +92,7 @@ function RegisterContainer() {
             </Button>
           </div>
         </Form>
-        <img className="w-100 mx-4 joy" src={Img} alt="Register" />
+        <img className="w-75 mx-4 joy" src={Img} alt="Register" />
       </div>
     </Container>
   );
@@ -102,19 +102,14 @@ function SignInContainer() {
   return (
     <h1>
       <Container>
-        <div className="d-flex justify-content-between  my-1">
+        <div className="d-flex justify-content-between my-1">
           <Form>
-            <Form.Group className="d-flex">
-              <Form.Control type="text" placeholder="First Name" />
-              <Form.Control type="text" placeholder="Last Name" />
-            </Form.Group>
             <Form.Control type="email" placeholder="Enter email" />
             <Form.Control
               type="password"
               placeholder="Password                                                     &#xf06e;"
               style={{ fontFamily: "FontAwesome,IBM Plex Sans,sans-serif" }}
             />
-            <Form.Control type="password" placeholder="Confirm Password" />
             <Button className="w-100 my-3" style={{ borderRadius: "1rem" }}>
               <small>Create Account</small>
             </Button>
@@ -133,7 +128,7 @@ function SignInContainer() {
               </Button>
             </div>
           </Form>
-          <img src={Img} className="w-100 mx-4 joy" alt="Login" />
+          <img src={Img} className="w-75 mx-4 joy" alt="Login" />
         </div>
       </Container>
     </h1>
