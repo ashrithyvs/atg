@@ -2,8 +2,8 @@ import React from "react";
 import { CardColumns, Container } from "react-bootstrap";
 import Article from "./Article/Article";
 import CardImg from "./art1.jpg";
-import CardImg2 from "./art2.png";
-import CardImg3 from "./art3.png";
+import CardImg2 from "./art3.png";
+import CardImg3 from "./art2.png";
 import userImg from "./user.png";
 import Job from "./Article/Job";
 
